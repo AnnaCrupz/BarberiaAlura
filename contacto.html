@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/imagenes/logo.png" alt="logo"></h1>
+            <!--Se utiliza h1 para resaltar el logo-->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomCompleto">Nombre y apellido:</label>
+            <input type="text" name="nomCompleto" id="nomCompleto" class="padron" required>
+            
+            <label for="email">Correo electrónico: </label>
+            <input type="email" name="email" id="email" class="padron" required placeholder="email@dominio">
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="tel" class="padron" required placeholder="(XX) XXXXXX">
+
+            
+            <label for="msg">Mensaje: </label>
+            <textarea name="msg" id="msg" cols="70" rows="10" class="padron" required>
+            </textarea>
+
+            <!--¿Cómo le gustaria ser contactado?-->
+            <fieldset>
+                <legend>¿Cómo le gustaría ser contactado?</legend>
+            <div class="tipoContacto">
+            <label for="radio-email"> <input type="radio" name="contacto" value="email" id="radio-email"> Email </label>
+            <label for="radio-tel"><input type="radio" name="contacto" value="tel" id="radio-tel"> Teléfono </label>
+            <label for="radio-wsp"><input type="radio" name="contacto" value="wsp" id="radio-wsp" checked> Whatsapp </label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En qué horario prefiere ser atendido?</legend>
+            <select name="horario" id="horarioAte">
+                <option value="Mañana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+            </select>
+             </fieldset>
+
+            <label><input class="checkbox" type="checkbox" name="nov" id="nov" checked> ¿Le gustaria recibir novedades de la barbería Alura?</label>
+            <!--boton enviar-->
+            <input class="enviar" type="submit" value="Enviar formulario">
+        </form>
+
+        <!--Inicio tabla horarios de atención-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08:00-20:00hrs</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08:00-20:00hrs</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00-20:00hrs</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Fin horarios de atencion-->
+    </main>
+    <footer>
+        <img src="./imagenes/imagenes/logo-blanco.png" alt="logoB">
+        <p class="copyright">&copy; Copyright Barberia Alura 2023</p>
+    </footer>
+</body>
+</html>
